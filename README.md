@@ -17,7 +17,7 @@ The building of the bitstream will take a while to complete.
 ## Building Petalinux
 To build a Petalinux image, use the following steps
 1. cd into the Petalinux directory, sw/petalinux
-2. Create the Petalinux project from the BSP using the command "petalinux-create project -s petalinux-<x>GB.bsp", where <x> is the memory size
+2. Create the Petalinux project from the BSP using the command "petalinux-create project -s petalinux-\<x\>GB.bsp", where \<x\> is the memory size
 3. Build Petalinux with "petalinux-build"
 4. Create the BOOT.BIN file with "petalinux-package --boot --u-boot --fpga --force"
 After completing the above steps, the Linux kernel and a minimal file system will
