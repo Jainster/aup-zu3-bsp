@@ -9,7 +9,7 @@ To build the bitstream, use the following steps
 1. Using "git clone", install "https://github.com/Digilent/vivado-library.git" repository in "~/Src"
 2. cd into the hardware directory, hw
 3. Ensure the path is set to use Vitis
-4. Run "vivado -mode batch -source hw_<x>GB", where <x> is the memory size
+4. Run "vivado -mode batch -source hw_\<x\>GB", where \<x\> is the memory size
 5. Upon completion, run "vivado hw/hw.xpr"
 6. The Vivado GUI will appear and the bitstream can now be built
 The building of the bitstream will take a while to complete.
