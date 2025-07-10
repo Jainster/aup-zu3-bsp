@@ -104,7 +104,7 @@ if { $nRet != 0 } {
 }
 
 # Add IP
-set_property  ip_repo_paths  ~/Src/vivado-library [current_project]
+set_property  ip_repo_paths "C:/Xilinx/Vitis/aup-zu3-bsp/Src/vivado-library" [current_project]
 update_ip_catalog
 
 set bCheckIPsPassed 1

@@ -1,0 +1,144 @@
+INFO-FLOW: Workspace C:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.runs/hw_v_frmbuf_wr_0_0_synth_1/prj/sol opened at Thu Jul 10 16:06:53 -0500 2025
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command     open_solution done; 0.254 sec.
+Execute     set_part xczu3eg-sfvc784-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sfvc784-2-e 
+Execute       create_platform xczu3eg-sfvc784-2-e -board  
+DBG:HLSDevice: Trying to load device library: C:\Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
+Command       create_platform done; 4.774 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.485 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.974 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 5.825 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/v_frmbuf_wr_config.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/v_frmbuf_wr_config.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/v_frmbuf_wr_config.h' to the project
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/v_frmbuf_wr.cpp 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/v_frmbuf_wr.cpp 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/v_frmbuf_wr.cpp' to the project
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/v_frmbuf_wr.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/v_frmbuf_wr.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/v_frmbuf_wr.h' to the project
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls_video.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls_video.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls_video.h' to the project
+Command     add_files done; 0.121 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls_opencv.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls_opencv.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls_opencv.h' to the project
+Command     add_files done; 0.11 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h' to the project
+Command     add_files done; 0.115 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h' to the project
+Command     add_files done; 0.112 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_core.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_core.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_core.h' to the project
+Command     add_files done; 0.117 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_fast.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_fast.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_fast.h' to the project
+Command     add_files done; 0.121 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_haar.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_haar.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_haar.h' to the project
+Command     add_files done; 0.146 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_harris.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_harris.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_harris.h' to the project
+Command     add_files done; 0.142 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_histogram.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_histogram.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_histogram.h' to the project
+Command     add_files done; 0.128 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_hough.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_hough.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_hough.h' to the project
+Command     add_files done; 0.108 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_imgbase.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_imgbase.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_imgbase.h' to the project
+Command     add_files done; 0.144 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_imgproc.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_imgproc.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_imgproc.h' to the project
+Command     add_files done; 0.196 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_io.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_io.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_io.h' to the project
+Command     add_files done; 0.218 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_mem.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_mem.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_mem.h' to the project
+Command     add_files done; 0.249 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_stereobm.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_stereobm.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_stereobm.h' to the project
+Command     add_files done; 0.247 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_types.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_types.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_types.h' to the project
+Command     add_files done; 0.289 sec.
+Execute     add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_undistort.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls -I c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src  c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_undistort.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xilinx/Vitis/aup-zu3-bsp/hw/hw/hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/hls/hls_video_undistort.h' to the project
+Command     add_files done; 0.236 sec.
+Execute     create_clock -period 10 -name ap_clk 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name ap_clk 
+Execute       ap_set_clock -name ap_clk -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'ap_clk' with a period of 10ns.
+Execute     config_interface -m_axi_flush_mode 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_flush_mode 
+Execute     config_interface -m_axi_conservative_mode 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_conservative_mode 
+Execute     config_interface -m_axi_addr64=false 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=false 
+Execute     config_rtl -module_prefix hw_v_frmbuf_wr_0_0_ 
+INFO: [HLS 200-1510] Running: config_rtl -module_prefix hw_v_frmbuf_wr_0_0_ 
+Execute     config_export -vendor xilinx.com -library ip -version 2.5 
+INFO: [HLS 200-1510] Running: config_export -vendor xilinx.com -library ip -version 2.5 
+Execute     csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.723 seconds; current allocated memory: 138.613 MB.
+Execute         set_directive_top v_frmbuf_wr -name=v_frmbuf_wr 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Command         ap_source done; 0.107 sec.
+INFO: [HLS 200-10] Analyzing design file '../../hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/v_frmbuf_wr.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling ../../hw.gen/sources_1/bd/hw/ip/hw_v_frmbuf_wr_0_0/src/v_frmbuf_wr.cpp as C++
+Execute         ap_part_info -name xczu3eg-sfvc784-2-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Command       elaborate done; error code: 1; 17.061 sec.
+Command     csynth_design done; error code: 1; 17.734 sec.
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:17; Allocated memory: 1.719 MB.
+Command   ap_source done; error code: 1; 27.127 sec.
+Command vitis_hls_bin done; error code: 1; 27.523 sec.
+INFO: [Common 17-344] 'source' was cancelled
+Execute cleanup_all 
